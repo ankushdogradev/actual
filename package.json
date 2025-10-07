@@ -32,6 +32,8 @@
     "start:service-plugins": "yarn workspace plugins-service watch",
     "start:browser-backend": "yarn workspace loot-core watch:browser",
     "start:browser-frontend": "yarn workspace @actual-app/web start:browser",
+    "start:mobile": "yarn workspace @actual-app/mobile-ios start",
+    "start:mobile:ios": "yarn workspace @actual-app/mobile-ios start:ios",
     "build:browser-backend": "yarn workspace loot-core build:browser",
     "build:server": "yarn build:browser && yarn workspace @actual-app/sync-server build",
     "build:browser": "./bin/package-browser",

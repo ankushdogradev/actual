@@ -149,6 +149,14 @@ export default pluginTypescript.config(
       },
     },
   },
+  {
+    files: ['packages/mobile-ios/**/*.{ts,tsx}'],
+    languageOptions: {
+      globals: {
+        ...globals.reactnative,
+      },
+    },
+  },
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
   pluginTypescript.configs.recommended,
