@@ -65,3 +65,14 @@ build/
 
 # .d.ts files aren't type-checked with skipLibCheck set to true
 *.d.ts
+!packages/mobile-ios/expo-env.d.ts
+
+# Expo / React Native mobile build artifacts
+packages/mobile-ios/.expo
+packages/mobile-ios/.expo-shared
+packages/mobile-ios/dist
+packages/mobile-ios/build
+packages/mobile-ios/ios/Pods
+packages/mobile-ios/ios/build
+packages/mobile-ios/ios/DerivedData
+packages/mobile-ios/ios/*.xcworkspace

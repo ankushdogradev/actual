@@ -25,6 +25,20 @@ There are four ways to deploy Actual:
 1. Self-hosted by using [a Docker image](https://actualbudget.org/docs/install/docker)
 1. Local-only apps - [downloadable Windows, Mac and Linux apps](https://actualbudget.org/download/) you can run on your device
 
+### Experimental iOS app
+
+An Expo-managed wrapper for the web client now lives in [`packages/mobile-ios`](./packages/mobile-ios). It loads an existing Actual instance inside a native WebView so you can run Actual on iPhone and iPad.
+
+```sh
+# Start the web client (in another terminal)
+yarn start:browser
+
+# Launch the Expo development server
+yarn workspace @actual-app/mobile-ios start
+```
+
+Override the backend URL by exporting `EXPO_PUBLIC_ACTUAL_URL` before starting Expo. See the package README for prebuild/bundling instructions and additional details.
+
 Learn more in the [installation instructions docs](https://actualbudget.org/docs/install/).
 
 ## Ready to Start Budgeting?
